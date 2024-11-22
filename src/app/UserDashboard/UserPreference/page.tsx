@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import UserPreferences from '@/components/userPreference'; 
 import { useAuth } from '@/context/AuthProvider';
 import { useRouter } from 'next/navigation'; 
@@ -8,9 +8,14 @@ const PreferencesPage: React.FC = () => {
   const { isAuthenticated } = useAuth(); 
   const router = useRouter();
   
- if (!isAuthenticated) {
-    router.push('/Login'); 
-    return null; 
+  useEffect(() => {
+    if (!isAuthenticated) {
+      router.push('/Login'); // Redirect only after rendering
+    }
+  }, [isAuthenticated, router]);
+
+  if (!isAuthenticated) {
+    return null; // Avoid rendering the component until redirection
   }
 
   return (

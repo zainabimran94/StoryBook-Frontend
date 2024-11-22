@@ -5,7 +5,9 @@ import { getRequest, postRequest } from '../lib/apiHelpers';
 import { useAuth } from '@/context/AuthProvider';
 import { useRouter } from 'next/navigation'; 
 import Image from 'next/image';
-import writing from '../assets/writing.png'
+import writing from '../assets/writing.png';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const UserPreferences: React.FC = () => {
   const [preferences, setPreferences] = useState<GetPreferenceDto>();
@@ -46,23 +48,22 @@ const UserPreferences: React.FC = () => {
       userId: user?.sub || ''
     };
     if (isToddler && !selectedImage) {
-      alert("Please select an image.");
+      toast.warn("Please select an image.");
       return;
     } else if (!isToddler && !userNote) {
-      alert("Please enter a description for the story.");
+      toast.warn("Please enter a description for the story.");
       return;
     }
     try {
+      toast.info("Your story is being generated...");
       const response = await postRequest({
-        url: 'Story/generate-story',
+        url: "Story/generate-story",
         data: preference,
       });
-      console.log("Story generated successfully:", response);
-      alert("Story generated and saved successfully!");
-      router.push('/UserDashboard/StoryDisplay');
+      toast.success("Story generated and saved successfully!");
+      router.push("/UserDashboard/StoryDisplay");
     } catch (error) {
-      console.error("Error generating story:", error);
-      alert("An error occurred. Please try again.");
+      toast.error("An error occurred. Please try again.");
     }
   };
  
@@ -150,7 +151,8 @@ const UserPreferences: React.FC = () => {
       )}
     </div>
   )}
-</div>
+   <ToastContainer />
+  </div>
 
   )
   
