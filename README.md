@@ -47,7 +47,11 @@ An interactive and AI-powered application designed to create delightful, age-app
 ### 7. **📷 Media Link**
 - **Video link**:
   
-  **Part 1** ![Part 1](Part1.mp4)
+  **Part 1** 
+
+https://github.com/user-attachments/assets/3ad7c406-e605-4609-a9d3-28f4005d6b28
+
+
   **Part 2** 
 
 https://github.com/user-attachments/assets/bfb9b199-5814-4e5d-9911-0edaecb73a41
