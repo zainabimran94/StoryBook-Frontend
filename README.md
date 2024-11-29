@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Children's Story App  
 
-## Getting Started
+An interactive and AI-powered application designed to create delightful, age-appropriate stories for children. The app provides a user-friendly interface and leverages cutting-edge AI technology to generate personalized stories based on user preferences. Built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**, this project emphasizes responsive design and seamless storytelling.  
 
-First, run the development server:
+---  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 1. **User Authentication**  
+- Secure registration and login system.  
+- Users can easily create accounts and manage their sessions.  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. **Responsive Navigation**  
+- A clean and dynamic navbar that adapts to various screen sizes.  
+- Provides quick access to:  
+  - **Home**: Explore the app.  
+  - **Dashboard**: Set preferences and generate stories.  
+  - **Preferences**: Customize story settings.  
+  - **User Stories**: View previously generated stories.  
+  - **Login/Logout**: Manage user sessions.  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. **Personalized Dashboard**  
+- Tailored to user preferences, featuring:  
+  - **Age Group Selection**: Choose between "Toddler" and "Kid" categories.  
+  - **Theme Selection**: Customize the story theme.  
+  - **Story Generator Button**: Easily initiate AI-powered story creation.  
 
-## Learn More
+### 4. **Preference Customization**  
+- **Toddler Group**: Displays an engaging gallery of images to assist in selecting themes.  
+- **Kid Group**: Offers a detailed form to provide descriptive inputs for story personalization.  
 
-To learn more about Next.js, take a look at the following resources:
+### 5. **AI-Generated Stories**  
+- Automatically generates a captivating story based on user preferences, including:  
+  - **Story Title**: AI-curated title to match the selected theme.  
+  - **Story Image**: AI-generated artwork to complement the story.  
+  - **Short Story**: A narrative tailored to the chosen age group and theme.  
+- Progress feedback provided via a **Toastify Loader** during story generation.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 6. **Modern Tech Stack**  
+- **Frontend**: Next.js 14, TypeScript, Tailwind CSS, Axios for HTTP requests.
+  
+## 🌐 Backend Services  
+The backend architecture integrates C# and Python services to ensure seamless communication and efficient processing of user requests:  
+- **C# API**:  
+  - Manages user authentication, preferences, and interactions with the PostgreSQL database.  
+  - Acts as the intermediary between the frontend and the Python AI service.  
+  - Receives user preferences from the frontend and forwards them to the Python AI service via **HTTP client**.  
+  - Handles the response from Python, including AI-generated titles, images, and stories, and sends the final data back to the frontend.  
+  - GitHub Repository: [StoryBook C# Backend](https://github.com/zainabimran94/StoryBook-c-.git)  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Python AI Service**:  
+  - Processes data received from the C# API to generate personalized story content.  
+  - **Gemini API**: Utilized for creating engaging story titles and narratives.  
+  - **Flux.dev AI**: Generates custom story images based on user preferences.  
+  - Sends the generated data (titles, stories, and images) back to the C# API via **HTTP client**.  
+  - GitHub Repository: [StoryBook Python Backend](https://github.com/zainabimran94/StoryBook-Python.git)  
 
-## Deploy on Vercel
+- **Database**:  
+  - **PostgreSQL**: Used to store user data, preferences, and records of generated stories.  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This backend architecture ensures smooth communication between the frontend and the AI services, providing users with a responsive and engaging experience.  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---  
+
+## 📦 Pre-installed Dependencies  
+
+- **Next.js 14**:  
+  - Optimized with Turbopack for faster builds.  
+  - Built-in TypeScript and ESLint support.  
+
+- **Tailwind CSS**:  
+  - A utility-first CSS framework for streamlined UI development.  
+
+---  
+
+## 📂 Additional Dependencies  
+
+To enhance functionality and usability, the following packages were added:  
+
+### **UI and Styling**  
+- `@material-tailwind/react`: Pre-built Tailwind components.  
+- `@nextui-org/button` & `@nextui-org/dropdown`: For clean, accessible UI elements.  
+- `react-icons`: Icon library for enriched visual elements.  
+- `clsx`: Manages conditional class merging.  
+- `tailwind-merge`: Dynamically combines Tailwind classes.  
+
+### **Animations and State Management**  
+- `framer-motion` & `motion`: Smooth animations and transitions.  
+- `react-use`: Provides essential React hooks for state management.  
+
+### **Utilities**  
+- `axios`: For seamless HTTP requests.  
+- `jwt-decode`: Decodes JSON web tokens for authentication.  
+- `react-toastify`: Displays notifications with a modern, polished design.  
+
+### **Hamburger Menu**  
+- `hamburger-react`: A compact and responsive menu toggle.  
+
+---  
+
+## 💻 Installation  
+
+Follow these steps to set up the project locally:  
+
+1. **Clone the Repository**:  
+   ```bash  
+   git clone https://github.com/zainabimran94/StoryBook-Frontend.git
+2. **Install Dependencies**:
+   npm install
+3. **Start the Development Server**:
+   npm run dev
+   
+## 📝 Contributing
+We welcome contributions to improve the app! Feel free to submit issues, feature requests, or pull requests via GitHub.
+
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
