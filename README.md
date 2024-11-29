@@ -38,6 +38,15 @@ An interactive and AI-powered application designed to create delightful, age-app
 
 ### 6. **Modern Tech Stack**  
 - **Frontend**: Next.js 14, TypeScript, Tailwind CSS, Axios for HTTP requests.
+- **Backend**: C#, Python and PostgreSql
+
+### 7. **Media Link**
+- **Youtube Video link**:
+  **Part 1** https://www.youtube.com/watch?v=Usgh5Dy4JpU
+  **Part 2** https://www.youtube.com/watch?v=oNG30n75hwY
+  
+- **Screenshots Link**
+   WebsiteShowcase.md
   
 ## 🌐 Backend Services  
 The backend architecture integrates C# and Python services to ensure seamless communication and efficient processing of user requests:  
