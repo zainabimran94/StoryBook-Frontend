@@ -45,10 +45,10 @@ An interactive and AI-powered application designed to create delightful, age-app
 - **Backend**: C#, Python and PostgreSql
 
 ### 7. **📷 Media Link**
-- **Youtube Video link**:
+- **Video link**:
   
-  **Part 1** https://www.youtube.com/watch?v=Usgh5Dy4Jp
-  **Part 2** https://www.youtube.com/watch?v=oNG30n75hwY
+  **Part 1** ![Part 1](Part1.mp4)
+  **Part 2** ![Part 2](Part2.mp4)
   
 - **Screenshots Link**
   https://github.com/zainabimran94/StoryBook-Frontend/blob/36750479782cece536be897590d0c7a332a2947a/WebsiteShowcase.md
