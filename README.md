@@ -47,8 +47,8 @@ An interactive and AI-powered application designed to create delightful, age-app
 ### 7. **📷 Media Link**
 - **Video link**:
   
-  **Part 1** ![Part 1](Part 1.mp4)
-  **Part 2** ![Part 2](Part 2.mp4)
+  **Part 1** ![Part 1](Part1.mp4)
+  **Part 2** ![Part 2](Part2.mp4)
   
 - **Screenshots Link**
   https://github.com/zainabimran94/StoryBook-Frontend/blob/36750479782cece536be897590d0c7a332a2947a/WebsiteShowcase.md
