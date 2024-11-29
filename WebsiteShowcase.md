@@ -1,5 +1,5 @@
 ### Showcasing media for my **"Children Story App"**
 
-![HomePage](1.png)
-![RegisterPage](2.png)
+![HomePage](storybook/1.png)
+![RegisterPage](storybook/2.png)
 
