@@ -2,6 +2,10 @@
 
 An interactive and AI-powered application designed to create delightful, age-appropriate stories for children. The app provides a user-friendly interface and leverages cutting-edge AI technology to generate personalized stories based on user preferences. Built with **Next.js 14**, **TypeScript**, and **Tailwind CSS**, this project emphasizes responsive design and seamless storytelling.  
 
+**Home Page**
+![HomePage](1.png)
+
+
 ---  
 
 ## 🚀 Features  
