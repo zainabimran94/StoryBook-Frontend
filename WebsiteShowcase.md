@@ -22,5 +22,5 @@
 ![Loader](7.png)
 
 **Generated Story**
-![StoriesPage](3.png)
+![StoriesPage](8.png)
 
